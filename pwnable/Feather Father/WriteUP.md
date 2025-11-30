@@ -80,6 +80,8 @@ system: 0xf7dc5430 binsh: 0xf7f39de8
 
 ```
 
+자동 탐색 스크립트를 통해 pad를 296, 300, 304, 308, 312로 바꾸어가며 첫 번째 ROP 체인(puts@plt 호출)을 시도했을 때 위같은 로그가 나왔다. pad=312일 때에만 saved EIP가 정확히 puts@plt로 덮여서 ROP 체인이 올바르게 실행된다! 40 d1 de f7 이 값이 0xf7ded140이 되고, 이 값이 libc 상의 puts 실제 주소다.
+
 
 
 ## Exploit
