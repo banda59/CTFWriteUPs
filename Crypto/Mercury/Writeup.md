@@ -1,9 +1,9 @@
 
-![[❤️ WriteUps/Crypto/Mercury/image2.png]]
+![[WriteUps/Crypto/Mercury/image2.png]]
 
-![[❤️ WriteUps/Crypto/Mercury/image3.png]]
+![[WriteUps/Crypto/Mercury/image3.png]]
 
-![[❤️ WriteUps/Crypto/Mercury/image4.png]]
+![[WriteUps/Crypto/Mercury/image4.png]]
 
 
 ```python
@@ -146,4 +146,4 @@ if __name__ == '__main__':
 
 
 
-![[❤️ WriteUps/Crypto/Mercury/image1.png]]
+![[WriteUps/Crypto/Mercury/image1.png]]

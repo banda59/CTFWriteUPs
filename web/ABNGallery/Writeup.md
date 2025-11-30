@@ -1,5 +1,5 @@
 
-![[❤️ WriteUps/web/ABNGallery/image2.png]]
+![[WriteUps/web/ABNGallery/image2.png]]
 
 
 
@@ -86,4 +86,4 @@ print("\n[-] All attempts failed. Try increasing attempts or checking the server
 
 
 
-![[❤️ WriteUps/web/ABNGallery/image1.png]]
+![[WriteUps/web/ABNGallery/image1.png]]

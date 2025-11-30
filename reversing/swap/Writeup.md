@@ -190,5 +190,5 @@ if __name__ == '__main__':
 
 
 # Solve
-![[❤️ WriteUps/reversing/swap/image1.png]]
+![[/reversing/swap/image1.png]]
 
