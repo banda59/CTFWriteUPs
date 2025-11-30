@@ -148,4 +148,4 @@ r.interactive()
 즉, 스택 오버플로우로 리턴 주소를 제어한 뒤, puts를 이용해 libc 주소를 누출하고, 계산한 system과 "/bin/sh" 주소로 ret2libc 2단계 체인을 구성하는 전형적인 익스플로잇이라고 볼 수 있었다.
 
 ## Solved
-![](pwnable/Feather%20Father/image1.png)
+![](image1.png)
