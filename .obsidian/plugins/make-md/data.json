@@ -39,7 +39,9 @@
   "deleteFileOption": "trash",
   "expandedSpaces": [
     "/",
-    "//web"
+    "//web",
+    "//pwnable",
+    "//pwnable/pwnable/Feather Father"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
