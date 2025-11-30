@@ -1,4 +1,5 @@
 
+## Explain
 ![[pwnable/just-exit/image1.png]]
 모든 보호기법이 적용되어 있다.
 
@@ -87,6 +88,8 @@ int __fastcall main(int argc, const char **argv, const char **envp)
 
 우리의 목표는 `sigsys_handler`를 실행시키는 것이다. 그러려면 필터가 Trap을 발동시키는 **유일한 번호인 `169`를 입력해야 한다.
 
+
+## Payload
 ```python
 from pwn import *
 context.binary = './main'
@@ -103,5 +106,7 @@ p.interactive()
 ```
 
 
+
+## Solved
 ![[pwnable/just-exit/image2.png]]
 너무 쉽게 풀려서 조금 머쓱하다

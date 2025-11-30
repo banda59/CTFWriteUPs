@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Crypto/Mercury/Writeup.md",
+                "file": "reversing/swap/Writeup.md",
                 "mode": "source",
                 "source": false
               },
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Crypto/Mercury/Writeup.md",
+                "file": "reversing/swap/Writeup.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Crypto/Mercury/Writeup.md",
+                "file": "reversing/swap/Writeup.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -156,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Crypto/Mercury/Writeup.md",
+                "file": "reversing/swap/Writeup.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -186,9 +186,9 @@
   },
   "active": "29cfa055846dd2b7",
   "lastOpenFiles": [
-    "2025-11-30.md",
-    "Crypto/Mercury/Writeup.md",
     "pwnable/just-exit/Writeup.md",
+    "Crypto/Mercury/Writeup.md",
+    "2025-11-30.md",
     "reversing/swap/Writeup.md",
     "reversing/swap/image1.png",
     "WriteUps.md",
