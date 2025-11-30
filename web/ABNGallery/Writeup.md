@@ -1,10 +1,18 @@
 
 
+## Explain
+
 ![](web/ABNGallery/image2.png)
+해당 문제는 SSRF 취약점을 이용해서, 외부에서 접근 불가능한 내부망인 3000 서비스에 접근하고, 필터링 우회 기법을 통해서 플래그를 얻어내는 문제다. 처음 폴더 안을 들어가면 핵심적으로 app.js를 확인해봐야 한다.
 
 
+![](web/ABNGallery/image3.png)
+app.js의 /admin 부분을 확인해보면 사용자가 입력한 `log` 파라미터를 그대로 `path.join`에 넣어 `../flag`와 같은 상위 경로 접근을 허용하는 것을 알 수 있다.
 
+![](web/ABNGallery/image4.png)
+또한 /fetch 부분에서는 URL의 Host를 문자열로 파싱하거나(`extractHost`), DNS를 조회한 시점과 실제 요청하는 시점을 이용하는 TOCTOU를 이용한 공격에 취약했다.
 
+## Payload
 ```python
 import requests
 import time
@@ -80,9 +88,11 @@ for filename in filenames:
         
 print("\n[-] All attempts failed. Try increasing attempts or checking the server status.")
 ```
-해당 문제는 SSRF 취약점을 이용해서, 외부에서 접근 불가능한 내부망인 3000 서비스에 접근하고, 필터링 우회 기법을 통해서 플래그를 얻어내는 문제다.
 
 
 
+
+
+## Solved
 
 ![](web/ABNGallery/image1.png)
