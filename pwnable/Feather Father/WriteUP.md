@@ -23,6 +23,11 @@ ssize_t vuln()
 }
 
 ```
+`main` 함수는 `vuln();`을 호출하고 종료하는 흐름을 가진다. 
+핵심 로직은 모두 `vuln` 함수 안에 있으므로, 익스플로잇 시에는 `vuln`이 진입점이 되고 `main`은 ROP 체인에서 ret-to-main으로 재사용할 수 있는 함수가 된다.
+
+`vuln` 함수는 `_BYTE buf[304];`를 지역 변수로 잡고, `read(0, buf, 0x15E);`를 호출한다. 이때 `buf`의 크기는 304(0x130)바이트인데 `read`는 최대 0x15E(350)바이트까지 읽도록 되어 있어 버퍼보다 최대 46바이트를 더 덮을 수 있다는 점을 이용하자!
+
 
 ```bash
 banda@seyeon:~/pwnable/FeatherFather$ checksec --file=chall
