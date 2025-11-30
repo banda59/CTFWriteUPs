@@ -39,11 +39,14 @@
   "deleteFileOption": "trash",
   "expandedSpaces": [
     "/",
-    "//web",
     "//pwnable",
     "//web/web/Stylish Flag",
     "//web/web/ABNGallery",
-    "//web/web/Mark The Lyrics"
+    "//web/web/Mark The Lyrics",
+    "//pwnable/pwnable/Waddler",
+    "//pwnable/pwnable/Feather Father",
+    "//reversing",
+    "//web"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",

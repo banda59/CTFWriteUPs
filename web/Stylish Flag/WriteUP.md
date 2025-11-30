@@ -51,7 +51,7 @@ HTML과 CSS를 보면 플래그는 실제로 텍스트 형태로 존재하지 �
 ```html
 <div class="flag"></div>
 ```
-원래 <div hidden class="flag">... 였던 이 hidden 부분을 지우면 초록색 점들이 나타나면서 플래그가 나타난다
+원래 <div hidden class="flag">... 였던 이 hidden 부분을 지우면 초록색 점들이 나타나면서 플래그가 나타난다.
 
 
 ![](web/Stylish%20Flag/image2.png)
@@ -64,3 +64,7 @@ HTML과 CSS를 보면 플래그는 실제로 텍스트 형태로 존재하지 �
 글씨체가 문자가 잘 안보이는 글씨체라서 {H1D30UT_CSS} {H1D3OUT_CSS} {H1D31N_CSS} {H1D3?UT_CSS}도 아무것도 플래그가 아니었다. 특히 3 옆에있는 저 애매한 8같은...O같은... D같은.. 저 글씨체의 문자를 맞추는데 30분이 넘게 걸린 것 같다. 정답은 정확히 기억이 나지 않는데 {H1D30UT_CS5}였던 것 같다. (이것도 확실하지 않다)
 
 사람들이 다들 나와 같은 상황을 겪었는지 👎로 가득했다..
+
+
+## Solved
+![](pwnable/Feather%20Father/image1.png)
