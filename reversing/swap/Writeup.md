@@ -1,5 +1,5 @@
 
-# 문제
+## Explain
 ```c
 __int64 __fastcall main(int a1, char **a2, char **a3)
 {
@@ -46,8 +46,14 @@ __int64 __fastcall main(int a1, char **a2, char **a3)
   return 0;
 }
 ```
+이 문제는 입력값을 변조하여 특정 데이터와 비교하는 루틴을 분석하고, 이를 리버스엔지니어링을 통해 Secret Key를 찾아내는 문제라고 파악했다.
 
+먼저 IDA를 통해 문제를 확인해보면 우리가 찾아야 할 키는 16 바이트다. 입력값 char32를 sub_4011AF 함수에 넣어서 변환하고, 그 결과를 char 32_2에 저장한다. 정방향 연산: Nibble Swap → XOR → 덧셈 연산을 했다는 식으로 이해하면 된다.
 
+```c
+if ( !memcmp(char32_2, &unk_404070, 0x10u) )
+```
+특히 이 부분이 중요한데, 변환된 값 char32_2가 메모리에 하드코딩되어있는 정답 데이터인 unk_404070과 똑같아야 한다. 즉, unk_404070이 암호화된 정답이라는 것을 알 수 있다.
 
 # payload
 ```python
@@ -77,8 +83,10 @@ print(f"[*] Recovered Key: {key}")
 r.sendlineafter(b': ', key.encode())
 r.interactive()
 ```
+payload 파일에 있는 encrypted_data에 들어가있는 리스트가 바로 IDA를 통해 바이너리 파일 내부의 unk_404070 주소에 있는 값들을 넣어준 것이다.
 
+또한 기존의 연산 과정인 `Nibble Swap`, `XOR 0x5A`, `Add Index`를 역연산하는 파이썬 스크립트를 작성해줬다.
 
 # Solve
 ![[/reversing/swap/image1.png]]
-
+스크립트가 계산한 Secret Key를 서버에 전송하면 플래그를 획득할 수 있다.

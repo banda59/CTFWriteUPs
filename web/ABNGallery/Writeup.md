@@ -86,4 +86,4 @@ print("\n[-] All attempts failed. Try increasing attempts or checking the server
 
 
 
-![[WriteUps/web/ABNGallery/image1.png]]
+![[web/ABNGallery/image1.png]]

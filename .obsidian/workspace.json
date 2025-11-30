@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "reversing/swap/Writeup.md",
+                "file": "web/ABNGallery/Writeup.md",
                 "mode": "source",
                 "source": false
               },
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "810d5fca41530cb0",
@@ -95,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "reversing/swap/Writeup.md",
+                "file": "web/ABNGallery/Writeup.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "reversing/swap/Writeup.md",
+                "file": "web/ABNGallery/Writeup.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -157,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "reversing/swap/Writeup.md",
+                "file": "web/ABNGallery/Writeup.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -187,10 +186,12 @@
   },
   "active": "29cfa055846dd2b7",
   "lastOpenFiles": [
-    "Crypto/Mercury/Writeup.md",
-    "reversing/swap/Writeup.md",
-    "pwnable/just-exit/Writeup.md",
+    "무제.base",
+    "web/ABNGallery/Writeup.md",
     "2025-11-30.md",
+    "reversing/swap/Writeup.md",
+    "Crypto/Mercury/Writeup.md",
+    "pwnable/just-exit/Writeup.md",
     "reversing/swap/image1.png",
     "WriteUps.md",
     "무제.canvas"
