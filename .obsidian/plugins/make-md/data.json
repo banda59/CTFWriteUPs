@@ -40,7 +40,8 @@
   "expandedSpaces": [
     "/",
     "//web",
-    "//pwnable"
+    "//pwnable",
+    "//pwnable/pwnable/Waddler"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
