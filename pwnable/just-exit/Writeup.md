@@ -1,6 +1,6 @@
 
 ## Explain
-![](pwnable/just-exit/image1.png)
+![](image1.png)
 모든 보호기법이 적용되어 있다.
 
 ```c
@@ -75,8 +75,8 @@ int __fastcall main(int argc, const char **argv, const char **envp)
 **정상적으로 `return 0`을 하려면?** `exitbuf()` 함수가 호출된 후 종료되지 않고 다시 `main` 함수로 리턴해야 한다.
 `modifybuf`에 `%hhu %hhu` 값을 넣으면 `modify[]`안에 그 값이 들어가고, n에 2을 입력했을 때 `\xFF`가 아닌 상태일 때라는 조건을 충족해야지 `exitbuf`가 modify 버퍼가 되면서 return 0이 된다는 내용으로 추측했다.
 
-![](pwnable/just-exit/image3.png)
-![](pwnable/just-exit/image4.png)
+![](image3.png)
+![](image4.png)
 
 "지금 실행하려는 시스템 콜 번호가 `169`번이니?"
 
@@ -108,5 +108,5 @@ p.interactive()
 
 
 ## Solved
-![](pwnable/just-exit/image2.png)
+![](image2.png)
 너무 쉽게 풀려서 조금 머쓱하다
