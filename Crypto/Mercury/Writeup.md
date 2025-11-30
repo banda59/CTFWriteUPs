@@ -1,9 +1,14 @@
 
-![[WriteUps/Crypto/Mercury/image2.png]]
+![[Crypto/Mercury/image2.png]]
+해당 문제는 `.py` 파일만이 제공되는 Crypto 문제다.
+요약하자면, AES-CBC 암호화 모드에서 발생하는 Padding Oracle Attack 취약점을 이용하여, 암호화된 Token을 복호화하고 플래그를 획득하는 문제다.
 
-![[WriteUps/Crypto/Mercury/image3.png]]
 
-![[WriteUps/Crypto/Mercury/image4.png]]
+![[Crypto/Mercury/image3.png]]
+
+
+
+![[Crypto/Mercury/image4.png]]
 
 
 ```python
@@ -146,4 +151,4 @@ if __name__ == '__main__':
 
 
 
-![[WriteUps/Crypto/Mercury/image1.png]]
+![[Crypto/Mercury/image1.png]]

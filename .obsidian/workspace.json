@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "reversing/swap/Writeup.md",
+                "file": "Crypto/Mercury/Writeup.md",
                 "mode": "source",
                 "source": false
               },
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "reversing/swap/Writeup.md",
+                "file": "Crypto/Mercury/Writeup.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "reversing/swap/Writeup.md",
+                "file": "Crypto/Mercury/Writeup.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -156,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "reversing/swap/Writeup.md",
+                "file": "Crypto/Mercury/Writeup.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -186,8 +186,10 @@
   },
   "active": "29cfa055846dd2b7",
   "lastOpenFiles": [
-    "reversing/swap/image1.png",
+    "pwnable/just-exit/Writeup.md",
+    "Crypto/Mercury/Writeup.md",
     "reversing/swap/Writeup.md",
+    "reversing/swap/image1.png",
     "WriteUps.md",
     "무제.canvas",
     "2025-11-30.md"
