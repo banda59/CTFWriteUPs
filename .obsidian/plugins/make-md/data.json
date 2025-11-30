@@ -40,8 +40,7 @@
   "expandedSpaces": [
     "/",
     "//web",
-    "//pwnable",
-    "//pwnable/pwnable/Feather Father"
+    "//pwnable"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
