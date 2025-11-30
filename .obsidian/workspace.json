@@ -39,7 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pwnable/Waddler/WriteUP.md",
+                "file": "web/Stylish Flag/WriteUP.md",
                 "mode": "source",
                 "source": false
               },
@@ -132,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "pwnable/Waddler/WriteUP.md",
+                "file": "web/Stylish Flag/WriteUP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "pwnable/Waddler/WriteUP.md",
+                "file": "web/Stylish Flag/WriteUP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -194,7 +194,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "pwnable/Waddler/WriteUP.md",
+                "file": "web/Stylish Flag/WriteUP.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -224,8 +224,12 @@
   },
   "active": "6825578e477a6522",
   "lastOpenFiles": [
-    "pwnable/Waddler/image1.png",
+    "web/Stylish Flag/image1.png",
+    "web/Stylish Flag/WriteUP.md",
+    "web/Stylish Flag/Stylish Flag.md",
+    "web/Stylish Flag",
     "pwnable/Waddler/WriteUP.md",
+    "pwnable/Waddler/image1.png",
     "pwnable/Waddler/Waddler.md",
     "pwnable/Waddler",
     "pwnable/Feather Father/WriteUP.md",

@@ -40,7 +40,8 @@
   "expandedSpaces": [
     "/",
     "//web",
-    "//pwnable"
+    "//pwnable",
+    "//web/web/Stylish Flag"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
