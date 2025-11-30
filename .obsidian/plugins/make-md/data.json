@@ -39,8 +39,7 @@
   "deleteFileOption": "trash",
   "expandedSpaces": [
     "/",
-    "//web",
-    "//web/web/ABNGallery"
+    "//web"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",

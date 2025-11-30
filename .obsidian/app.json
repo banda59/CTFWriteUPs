@@ -1,5 +1,7 @@
 {
   "promptDelete": false,
   "useMarkdownLinks": true,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "current",
+  "attachmentFolderPath": "./"
 }

