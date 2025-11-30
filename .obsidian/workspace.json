@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "810d5fca41530cb0",
@@ -186,10 +187,10 @@
   },
   "active": "29cfa055846dd2b7",
   "lastOpenFiles": [
-    "pwnable/just-exit/Writeup.md",
     "Crypto/Mercury/Writeup.md",
-    "2025-11-30.md",
     "reversing/swap/Writeup.md",
+    "pwnable/just-exit/Writeup.md",
+    "2025-11-30.md",
     "reversing/swap/image1.png",
     "WriteUps.md",
     "무제.canvas"
