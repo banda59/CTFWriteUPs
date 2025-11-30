@@ -1,6 +1,6 @@
 
-![[WriteUps/web/ABNGallery/image2.png]]
 
+![](web/ABNGallery/image2.png)
 
 
 
@@ -80,10 +80,9 @@ for filename in filenames:
         
 print("\n[-] All attempts failed. Try increasing attempts or checking the server status.")
 ```
+해당 문제는 SSRF 취약점을 이용해서, 외부에서 접근 불가능한 내부망인 3000 서비스에 접근하고, 필터링 우회 기법을 통해서 플래그를 얻어내는 문제다.
 
 
 
 
-
-
-![[web/ABNGallery/image1.png]]
+![](web/ABNGallery/image1.png)

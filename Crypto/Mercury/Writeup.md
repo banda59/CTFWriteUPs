@@ -1,16 +1,16 @@
 
 ## Explain
-![[Crypto/Mercury/image2.png]]
+![](Crypto/Mercury/image2.png)
 해당 문제는 `.py` 파일만이 제공되는 Crypto 문제다.
 요약하자면, AES-CBC 암호화 모드에서 발생하는 Padding Oracle Attack 취약점을 이용하여, 암호화된 Token을 복호화하고 플래그를 획득하는 문제다.
 
 먼저 어떤 입력(`inp`)이 들어오면 50% 확률로 `result`(True/False)를 알려주고, 50% 확률로 `None`을 반환한다. 
 
-![[Crypto/Mercury/image3.png]]
+![](Crypto/Mercury/image3.png)
 복호화된 결과의 패딩이 올바르면 True, 틀리면 False를 반환한다. 전형적인 Padding Oracle Attack 취약점이다. 공격자는 이를 이용해 암호화 키를 몰라도 평문을 복구할 수 있게 된다.
 
 
-![[Crypto/Mercury/image4.png]]
+![](Crypto/Mercury/image4.png)
 AES-CBC 모드에서 복호화 과정은 다음과 같다.
 
 $$P_i = D_K(C_i) \oplus C_{i-1}$$
@@ -153,5 +153,5 @@ exploit code는 다음과 같이 작성했다.
 
 
 ## Solved
-![[Crypto/Mercury/image1.png]]
+![](Crypto/Mercury/image1.png)
 결국 패딩 오라클 공격을 막기 위해 50% 확률로 패킷을 드랍하고 그 입력을 차단하는 수단을 우회하고, 약간은 운에 맡기는 문제였다.
