@@ -37,12 +37,14 @@
             "id": "6825578e477a6522",
             "type": "leaf",
             "state": {
-              "type": "mk-space",
+              "type": "markdown",
               "state": {
-                "path": "pwnable/Feather Father"
+                "file": "pwnable/Feather Father/WriteUP.md",
+                "mode": "source",
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "Feather Father"
+              "title": "WriteUP"
             }
           }
         ],
@@ -130,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "pwnable/Feather Father/Feather Father.md",
+                "file": "pwnable/Feather Father/WriteUP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +142,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Feather Father 의 백링크"
+              "title": "WriteUP 의 백링크"
             }
           },
           {
@@ -149,12 +151,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "pwnable/Feather Father/Feather Father.md",
+                "file": "pwnable/Feather Father/WriteUP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Feather Father 의 나가는 링크"
+              "title": "WriteUP 의 나가는 링크"
             }
           },
           {
@@ -192,13 +194,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "pwnable/Feather Father/Feather Father.md",
+                "file": "pwnable/Feather Father/WriteUP.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Feather Father 의 개요"
+              "title": "WriteUP 의 개요"
             }
           }
         ]
@@ -220,8 +222,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "30db868fd6e53c41",
+  "active": "6825578e477a6522",
   "lastOpenFiles": [
+    "pwnable/Feather Father/image1.png",
+    "pwnable/Feather Father/WriteUP.md",
     "pwnable/Feather Father/Feather Father.md",
     "pwnable/Feather Father",
     "pwnable/Untitled.md",
