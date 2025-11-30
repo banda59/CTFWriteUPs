@@ -41,7 +41,8 @@
     "/",
     "//web",
     "//pwnable",
-    "//web/web/Stylish Flag"
+    "//web/web/Stylish Flag",
+    "//web/web/ABNGallery"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
