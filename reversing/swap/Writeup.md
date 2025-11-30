@@ -88,5 +88,5 @@ payload 파일에 있는 encrypted_data에 들어가있는 리스트가 바로 I
 또한 기존의 연산 과정인 `Nibble Swap`, `XOR 0x5A`, `Add Index`를 역연산하는 파이썬 스크립트를 작성해줬다.
 
 # Solve
-![](reversing/swap/image1.png)
+![](image1.png)
 스크립트가 계산한 Secret Key를 서버에 전송하면 플래그를 획득할 수 있다.

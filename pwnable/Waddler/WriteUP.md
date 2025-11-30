@@ -78,5 +78,5 @@ p.close()
 
 
 ## Solved
-![](pwnable/Waddler/image1.png)
+![](image1.png)
 포너블이 전체적으로 좀 쉽게 출제됐다.

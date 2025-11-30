@@ -1,6 +1,6 @@
 
 ## Explain
-![](web/Stylish%20Flag/image1.png)
+![](image1.png)
 > [https://tommytheduck.github.io/stylish_flag/](https://tommytheduck.github.io/stylish_flag/)
 
 싫어요 35개를..받은 문제인데 인상깊어서 가져와봤다.
@@ -54,7 +54,7 @@ HTML과 CSS를 보면 플래그는 실제로 텍스트 형태로 존재하지 �
 원래 <div hidden class="flag">... 였던 이 hidden 부분을 지우면 초록색 점들이 나타나면서 플래그가 나타난다.
 
 
-![](web/Stylish%20Flag/image2.png)
+![](image2.png)
 이후 웹사이트를 확인해보면 이런 플래그 형태로 옅은 녹색 글자가 나타났다.
 
 ![](web/Stylish%20Flag/image3.png)
@@ -67,4 +67,4 @@ HTML과 CSS를 보면 플래그는 실제로 텍스트 형태로 존재하지 �
 
 
 ## Solved
-![](pwnable/Feather%20Father/image1.png)
+![](image1.png)
