@@ -42,7 +42,8 @@
     "//web",
     "//pwnable",
     "//web/web/Stylish Flag",
-    "//web/web/ABNGallery"
+    "//web/web/ABNGallery",
+    "//web/web/Mark The Lyrics"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",

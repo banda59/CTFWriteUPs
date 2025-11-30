@@ -39,7 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "web/Stylish Flag/WriteUP.md",
+                "file": "web/Mark The Lyrics/WriteUP.md",
                 "mode": "source",
                 "source": false
               },
@@ -132,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "web/Stylish Flag/WriteUP.md",
+                "file": "web/Mark The Lyrics/WriteUP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "web/Stylish Flag/WriteUP.md",
+                "file": "web/Mark The Lyrics/WriteUP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -194,7 +194,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "web/Stylish Flag/WriteUP.md",
+                "file": "web/Mark The Lyrics/WriteUP.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -222,11 +222,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6825578e477a6522",
+  "active": "8f2d2f9940a4d649",
   "lastOpenFiles": [
+    "web/Mark The Lyrics/WriteUP.md",
+    "web/Mark The Lyrics/Mark The Lyrics.md",
+    "web/Mark The Lyrics",
+    "web/Stylish Flag/WriteUP.md",
     "web/Stylish Flag/image4.png",
     "web/Stylish Flag/image3.png",
-    "web/Stylish Flag/WriteUP.md",
     "web/Stylish Flag/image1.png",
     "web/Stylish Flag/image2.png",
     "web/ABNGallery/image2.png",
