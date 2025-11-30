@@ -41,7 +41,7 @@ banda@seyeon:~/pwnable/FeatherFather$ checksec --file=chall
     Stripped:   No
 
 ```
-
+NX Enabled가 스택을 실행 불가능한 영역으로 만드는 것만 조심하면 될 것 같다.
 
 ```gdb
 pwndbg> p/x $ebp
@@ -58,6 +58,13 @@ pwndbg> x/20xw $ebp+4
 0xfff9013c:     0xfff901d4      0xf7ed1e34      0xfff901dc      0xf7f18b60
 
 ```
+`$ebp`는 `0xfff900f8`로 찍혔고, `*(unsigned int*)($ebp+4)` 값은 `0x080492ac`로 나온다. 이 값은 현재 프레임에서 리턴 시 점프할 EIP, 즉 saved EIP를 나타낸다. `x/20xw $ebp+4`를 보면 다음과 같은 형태로 나와 있다.
+
+0x080492ac → saved EIP (리턴 주소)
+0x41414141, 0x41414141, 0x08049070, ...
+
+이 덤프에서 `0x41414141`은 우리가 보낸 패딩 'A'들이고, `0x08049070` 등은 puts@plt같은 바이너리 주소들이다. 즉, 현재 페이로드가 스택에 들어간 상태에서 saved EIP 바로 뒤쪽에 우리가 의도한 ROP 체인의 일부와 'A' 패턴이 섞여 있다.
+
 
 
 ```
